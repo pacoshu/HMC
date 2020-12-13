@@ -1,6 +1,17 @@
 # HMC
 
 This python code represents a simplified version of the c++ code developed by Francisco-Shu Kitaura. 
+It corresponds to papers:
+https://ui.adsabs.harvard.edu/abs/2019arXiv191100284K/abstract
+https://ui.adsabs.harvard.edu/abs/2019arXiv191102667H/abstract
+
+See also:
+https://ui.adsabs.harvard.edu/abs/2008MNRAS.389..497K/abstract
+https://ui.adsabs.harvard.edu/abs/2010MNRAS.403..589K/abstract
+https://ui.adsabs.harvard.edu/abs/2010MNRAS.407...29J/abstract
+https://ui.adsabs.harvard.edu/abs/2012MNRAS.420...61K/abstract
+
+
 It permits to sample with Hamiltonian Monte Carlo sampling from a lognormal prior and a Poisson likelihood using the common 2nd order leapfrgo method and the 4th order discretisation scheme.
 
 One can produce mock data with the same lognormal-Poisson model by setting 
@@ -27,4 +38,5 @@ Nsteps = 5 #  relevant for 2nd order
 nrep = 3 # relevant for 4th order: nrep x forward steps + 1 x backward step + nrep x forward steps
 
 Some diagnostics is shown during the running process.
+
 
